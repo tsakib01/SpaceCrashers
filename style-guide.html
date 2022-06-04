@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Style Guide</title>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Serif:ital,opsz,wght@0,8..144,700;1,8..144,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="h1-header">
+        <h1>Style Guide</h1>
+      </div>
+
+      <div class="in-page-navigation-main">
+        <div class="in-page_navigation">
+          <a href="#interactive_elements">Interactive Elements</a>
+          <a href="#text_elements">Text Elements</a>
+          <a href="#combined_elements">Combined Elements</a>
+          <a href="#citations">Citations</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <div class="element-for-centering">
+        <h2>Interactive Elements</h2>
+
+        <!--IN-TEXT LINK SECTION-->
+        <section class="element">
+          <h3 class="element-heading">In-text link</h3>
+          <h4>CSS selector:</h4>
+          <p>a</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;p&gt;&lt;a&nbsp;href="https://mdn.dev"&gt;In-text&nbsp;link&lt;/a&gt;&lt;/p&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <p><a href="https://mdn.dev">In-text link</a></p>
+        </section>
+        <!--IN-TEXT LINK SECTION-->
+
+        <!--NAVIGATIONAL BUTTON SECTION-->
+        <section class="element">
+          <h3 class="element-heading">Navigation Link</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.button-nav</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;a&nbsp;href="#"&nbsp;class="button"&gt;Default Button&lt;/a&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <a class="button-nav" href="#">Default Button</a>
+        </section>
+        <!--NAVIGATIONAL BUTTON SECTION-->
+
+        <!--TEXT INPUT FIELD WITH LABEL SECTION-->
+        <section class="element">
+          <h3 class="element-heading">Text Input Field with Label</h3>
+
+          <h4>CSS selectors:</h4>
+          <p>form, .form-element, label, input</p>
+
+          <h4>Sample code:</h4>
+          <pre>
+            <code>
+                &lt;form&gt;
+                  &lt;div class="form-element"&gt; 
+                    &lt;label for="first-name"&gt;First Name&lt;/label&gt; 
+                    &lt;input id="first-name" type="text" placeholder="First Name"&gt;First Name&lt;/input&gt;
+                  &lt;/div&gt; 
+                &lt;/form&gt;
+            </code>
+          </pre>
+
+          <h4>Rendered element:</h4>
+          <form>
+            <div class="form-element">
+              <label for="first-name">First Name</label>
+              <input id="first-name" type="text" placeholder="First Name" />
+            </div>
+
+            <div class="form-element">
+              <label for="last-name">Last Name</label>
+              <input id="last-name" type="text" placeholder="Last Name" />
+            </div>
+
+            <div class="form-element">
+              <label for="address">Address</label>
+              <input id="address" type="text" placeholder="Address" />
+            </div>
+
+            <div class="form-element">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="something@domain.com"
+              />
+            </div>
+          </form>
+        </section>
+        <!--TEXT INPUT FIELD WITH LABEL SECTION-->
+
+        <!--IMAGE AS A LINK SECTION-->
+        <section class="element">
+          <h3 class="element-heading">Image as a Link</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.image-link</p>
+
+          <h4>Sample code:</h4>
+          <pre>
+            <code>
+              &lt;a 
+                  class="image-link" 
+                  href="https://www.sketchappsources.com/free-source/846-ui-style-guide-sketch-freebie-resource.html"
+                &gt;
+                &lt;img 
+                    src="img/style-guide.png"
+                    alt="A style guide for a UI Design"
+                    width="800"
+                    height="600"
+                /&gt;
+              &lt;/a&gt;
+            </code>
+          </pre>
+
+          <h4>Rendered element:</h4>
+          <a
+            class="image-link"
+            href="https://www.sketchappsources.com/free-source/846-ui-style-guide-sketch-freebie-resource.html"
+          >
+            <img
+              src="img/style-guide.png"
+              alt="A style guide for a UI Design"
+              width="800"
+              height="600"
+            />
+          </a>
+        </section>
+        <!--IMAGE AS A LINK SECTION-->
+      </div>
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <div class="element-for-centering">
+        <h2>Text Elements</h2>
+
+        <!--HEADINGS SECTION-->
+        <section class="element">
+          <h3 class="element-heading">Headings</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.heading-guide</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;h2&nbsp;class="heading-guide"&gt;Heading1&lt;/h2&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <h2 class="heading-guide">Heading1</h2>
+          <h3 class="heading-guide">Heading2</h3>
+          <h4 class="heading-guide">Heading3</h4>
+          <h5 class="heading-guide">Heading4</h5>
+        </section>
+        <!--HEADINGS SECTION-->
+
+        <!--PARAGRAPHS SECTION-->
+        <section class="element">
+          <h3 class="element-heading">Paragraphs</h3>
+          <h4>CSS selector:</h4>
+          <p>none</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;p&gt;This is the place where you can look for the working space
+            in your area for your desired work.&lt;/p&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <p>
+            This is the place where you can look for the working space in your
+            area for your desired work.
+          </p>
+        </section>
+        <!--PARAGRAPHS SECTION-->
+
+        <!--NUMBERED LISTS SECTION-->
+        <section class="element">
+          <h3 class="element-heading">Numbered Lists</h3>
+
+          <h4>CSS selectors:</h4>
+          <p>.numbered-list</p>
+
+          <h4>Sample code:</h4>
+          <pre>
+            <code>
+              &lt;ul class="numbered-list"&gt; 
+                  &lt;li&gt;Garage space&lt;/li&gt; 
+                  &lt;li&gt;Backyard space&lt;/li&gt;
+                  &lt;li&gt;Store room space&lt;/li&gt;
+              &lt;/ul&gt;
+            </code>
+          </pre>
+
+          <h4>Rendered element:</h4>
+          <ul class="numbered-list">
+            <li>Garage space</li>
+            <li>Backyard space</li>
+            <li>Store room space</li>
+          </ul>
+        </section>
+        <!--NUMBERED LISTS SECTION-->
+      </div>
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <div class="element-for-centering">
+        <h2>Combined Elements</h2>
+
+        <!--MAIN NAVIGATION SECTION-->
+        <section class="element">
+          <h3 class="element-heading">Main Navigation</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.main-navigation</p>
+
+          <h4>Sample code:</h4>
+          <pre>
+            <code>
+              &lt;nav class="main-navigation"&gt;
+                &lt;a href=""&gt;Home&lt;/a&gt;
+                &lt;a href=""&gt;Bookings&lt;/a&gt;
+                &lt;a href=""&gt;About us&lt;/a&gt;
+                &lt;a href=""&gt;Advanced Search&lt;/a&gt;
+              &lt;/nav&gt;
+            </code>
+          </pre>
+
+          <nav class="main-navigation">
+            <a href="index.html">Home</a>
+            <a href="https://google.com">Bookings</a>
+            <a href="https://yahoo.com">About us</a>
+            <a href="https://bing.com">Advanced Search</a>
+          </nav>
+        </section>
+        <!--MAIN NAVIGATION SECTION-->
+
+        <!--PRODUCT/SERVICE SECTION-->
+        <section class="element">
+          <h3 class="element-heading">Product/Service Listing</h3>
+          <h4>Garage space</h4>
+          <img
+            src="img/garage-space.jpg"
+            alt="Empty garage space available for rent"
+            width="2048"
+            height="1541"
+          />
+          <ul class="space-description-list">
+            <li><strong>Size:</strong> 150sqft</li>
+            <li>
+              <strong>Location:</strong> 1000 Pacific Ave, Pacific Ocean, P4O
+              2P0
+            </li>
+            <li><strong>Price:</strong> $ 50 per day (Negotiable)</li>
+            <li><strong>Contact:</strong> Available on request</li>
+          </ul>
+        </section>
+        <!--PRODUCT/SERVICE SECTION-->
+
+        <!--COLORS SECTION-->
+        <section class="element">
+          <h3 class="element-heading">Colors</h3>
+
+          <h4>CSS selectors:</h4>
+          <p>.p1-colors, .medium-aquamarine</p>
+
+          <h4>Sample code:</h4>
+          <pre>
+            <code>
+              &lt;div class="p1-colors"&gt;
+                &lt;div class="medium-aquamarine"&gt;#56E39F&lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
+
+          <h4>Rendered element:</h4>
+
+          <div class="p1-colors">
+            <div class="medium-aquamarine">#56E39F</div>
+            <div class="terra-cotta">#E87461</div>
+            <div class="dark-salmon">#DD9787</div>
+            <div class="raisin-black">#332E3C</div>
+            <div class="air-super-blue">#74A4BC</div>
+          </div>
+        </section>
+        <!--COLORS SECTION-->
+
+        <!--FONTS SECTION-->
+        <section class="element">
+          <h3 class="element-heading">Fonts</h3>
+          <ul>
+            <li class="roboto-font-element">Roboto Serif Bold</li>
+            <li class="roboto-font-element">
+              <i>Roboto Serif Bold Itatlic</i>
+            </li>
+            <li class="montserrat-font-element">Montserrat Light</li>
+          </ul>
+        </section>
+        <!--FONTS SECTION-->
+      </div>
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+    <!--CITATIONS SECTION-->
+    <section id="citations">
+      <div class="element-for-centering">
+        <h2>Citations</h2>
+
+        <ul>
+          <li>
+            Gazdowicz, Greg. Designer. 2014.
+            <strong>Roboto Serif [Font]</strong>. Retrieved from
+            <a
+              href="https://fonts.google.com/specimen/Roboto+Serif?query=roboto+serif#standard-styles"
+              >Roboto Serif Webfont from Google Fonts</a
+            >
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            Ulanovsky, Julieta. Designer. 2017.
+            <strong>Montserrat [Font]</strong>. Retrieved from
+            <a
+              href="https://fonts.google.com/specimen/Montserrat?query=mont#standard-styles"
+              >Montserrat Webfont from Google Fonts</a
+            >
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            This UI Style Guide was designed by&nbsp;<strong
+              >Ibrahima Ciss</strong
+            >. (n.d.). <strong>Ui Style Guide Sketch Freebie</strong>. sketch
+            app sources. Retrieved May 10, 2022, from
+            <a
+              href="https://www.sketchappsources.com/free-source/846-ui-style-guide-sketch-freebie-resource.html"
+              >UI Style Guide Sketch Resource</a
+            >
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            Shlabotnik, J. (2007, September 28). Garage. Flickr. Retrieved May
+            23, 2022, from
+            <a href="https://flic.kr/p/3dbo3i">Flickr Garage Space Image</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--CITATIONS SECTION-->
+  </body>
+</html>
