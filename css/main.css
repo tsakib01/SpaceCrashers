@@ -19,10 +19,6 @@ body {
   padding-left: 3rem;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Roboto Serif', serif;
-}
-
 a:hover, a:focus {
   color: white;
   background-color: #E87461;
@@ -387,4 +383,21 @@ implements all media queries for different screen sizes
 a {
   word-break: break-all;
   color: #332E3C;
+}
+
+
+/* INDEX PAGE */
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto Serif', serif;
+  color: black;
+}
+
+.main-heading {
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: #332E3C;
+  font-size: 2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
