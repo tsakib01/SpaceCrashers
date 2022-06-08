@@ -390,6 +390,7 @@ a {
 h1, h2, h3, h4, h5 {
   font-family: 'Roboto Serif', serif;
   color: black;
+  padding: 1rem;
 }
 
 .main-heading {
