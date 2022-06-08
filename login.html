@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
+    <!-- <link rel="stylesheet" href="css/main.css" /> -->
     <title>Space Crashers</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,20 +14,23 @@
   </head>
   <body>
     <header>
-      <h1 class="main-heading">SpaceCrashers</h1>
-      <nav class="main-navigation">
-        <a href="index.html">Home</a>
-        <a href="https://google.com">Bookings</a>
-        <a href="about.html">About us</a>
-        <a href="login.html">Log In</a>
-      </nav>
+      <h1 class="main-heading">Log In</h1>
     </header>
 
     <main>
-      <h2>Crash at your nearest place and get your job done.</h2>
-      <section>
-        <h3></h3>
-      </section>
+        <form>
+            <div class="form-element">
+              <label for="login-address">Email</label>
+              <input id="login-address" type="text" placeholder="First Name" />
+            </div>
+
+            <div class="form-element">
+                <label for="login-password">Password</label>
+                <input id="login-password" type="text" placeholder="First Name" />
+            </div>
+
+            <a class="button-nav" href="index.html">Enter</a>
+        </form>
     </main>
   </body>
 </html>
