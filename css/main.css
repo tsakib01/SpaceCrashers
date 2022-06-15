@@ -16,3 +16,10 @@ h2 {
   left: 0;
   top: 0;
 }
+
+/* PRODUCTS CATALOGUE*/
+
+.listing-heading {
+  margin-top: 2rem;
+  color: white;
+}
