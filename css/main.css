@@ -40,6 +40,10 @@ h2 {
   top: 0;
 }
 
+.hero-image {
+  width: 100%;
+}
+
 .browse {
   float: right;
   margin-top: -4rem;
@@ -62,4 +66,23 @@ h2 {
 
 .checkout-confirm {
   margin-top: 1rem;
+}
+
+/* SIGN UP */
+
+.sign-up {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.sign-up:hover, .sign-up:focus {
+  background-color: white;
+  color: black;
+}
+
+
+/* CITATIONS */
+
+.main-citations img {
+  display: block;
 }
