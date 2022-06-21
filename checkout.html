@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style-guide.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Space Crashers</title>
+    <title>Cart</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,15 +20,48 @@
         <a href="index.html">Home</a>
         <a href="products-catalogue.html">Listings</a>
         <a href="about.html">About us</a>
+        <a href="checkout.html">Cart</a>
         <a href="login.html">Log In</a>
       </nav>
     </header>
 
     <main class="element-for-centering">
       <section class="main-element">
-        <img src="#" alt="A venue being booked" />
-        <a class="button-nav" href="index.html">Confirm Booking</a>
+        <h2>Checkout</h2>
+        <form>
+          <div class="form-element">
+            <label for="checkout-name">First Name</label>
+            <input
+              id="checkout-name"
+              type="text"
+              placeholder="Name as it appears on Card"
+            />
+          </div>
+
+          <div class="form-element">
+            <label for="checkout-cardNumber">Credit Card Number</label>
+            <input id="checkout-cardNumber" type="text" placeholder="0000 0000 0000 0000"/>
+          </div>
+
+          <div class="form-element">
+            <label for="checkout-cvc">CVC</label>
+            <input id="checkout-cvc" type="text" placeholder="000"/>
+          </div>
+
+          </div>
+          <!-- <div><img src="#" alt="A venue being booked" /></div> -->
+          <a class="button-nav checkout-confirm" href="index.html"
+            >Confirm Booking</a
+          >
+        </form>
       </section>
     </main>
+
+    <footer>
+      <section class="element-for-centering">
+        <a href="#">Citations</a>
+        <a href="style-guide.html">Style Guide</a>
+      </section>
+    </footer>
   </body>
 </html>
