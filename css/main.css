@@ -6,7 +6,12 @@ a img:hover, a img:focus {
   opacity: 50%;
 }
 
-
+header {
+  position: sticky;
+  top:0;
+  left: 0;
+  z-index: 2;
+}
 
 /* INDEX PAGE */
 /* Hero Image Styling */
@@ -52,16 +57,9 @@ h2{
   margin-bottom: 4rem;
 }
 
-.flex-item {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:space-evenly;
-}
 
 .flex-item img {
   display: block;
-  width: 30rem;
-  height: 20rem;
   margin-bottom: 2rem;
 }
 
@@ -86,6 +84,30 @@ h2{
 
 }
 
+@media (max-width: 37.5rem){
+  .main-navigation a{
+    margin: 0;
+    padding: 0;
+    margin-bottom: -0.5rem;
+  }
+  .main-navigation a:first-child{
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 51rem) {
+  .flex-item img{
+    width: 35rem;
+    height: 25rem;
+  }
+
+  .flex-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+  }
+}
+
 /* PRODUCTS CATALOGUE*/
 
 .listing-heading {
@@ -96,6 +118,10 @@ h2{
 @media (max-width: 69rem) {
   .main-navigation {
     padding-top: 5rem;
+  }
+
+  .main-navigation a{
+    padding: 1rem;
   }
 }
 
@@ -122,4 +148,126 @@ h2{
 
 .main-citations img {
   display: block;
+}
+
+
+
+/*PROUCTS PAGE */
+li {
+  margin-bottom: 1rem;
+}
+
+/*CALENDER FOR BOOKINGS */
+.calender {
+  margin-top: 1rem;
+}
+
+.month {
+  padding: 2rem 0.1rem;
+  max-width: 30rem;
+  background: #E87461;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 1rem;
+}
+
+.month .next {
+  float: right;
+  padding-top: 1rem;
+}
+
+.weekdays {
+  max-width: 30rem;
+  margin: 0;
+  padding: 1rem 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 4rem;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  max-width: 30rem;
+  padding: 1.5rem 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #777;
+}
+
+.days li:hover {
+  background: #E87461;
+  color: white;
+}
+
+/* Add media queries for smaller screens */
+@media (max-width: 43.5rem) {
+  .weekdays li, .days li {
+    width: 3rem;
+  }
+}
+
+
+/* FOOTER */
+
+.contact-info h2 {
+  color: white;
+}
+
+.page-info-footer {
+  width: 15rem;
+  margin: 1rem auto;
+}
+
+.page-info-footer a{
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+
+.social-media-links a { 
+  width: 3rem;
+  padding: 0.5rem;
+  display: inline-block;
+}
+
+.social-media-links a:hover, .social-media-links a:focus {
+  text-decoration: none;
+  background-color: #74A4BC;
+} 
+
+@media (min-width: 38rem) {
+  .social-media-links {
+    float: right;
+    margin-top: -3.5rem;
+  }
+
 }
