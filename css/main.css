@@ -34,13 +34,13 @@ header {
 
 .intro .intro-header{
   border-radius:2rem;
-  padding:2rem 2.5rem;
-  background-color:rgba(255, 255, 255, 70%);
+  padding:1rem 1.5rem;
+  background-color:rgba(255, 255, 255, 50%);
   position: relative;
   z-index: 1;
-  max-width: 50rem;
+  max-width: 35rem;
   margin: 0rem auto;
-  top: 10rem;
+  top: 20rem;
   text-align: center;
 }
 
