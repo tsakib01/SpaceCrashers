@@ -174,23 +174,36 @@ li {
   float: right;
 }
 
+.products-img img {
+  width: 100%;
+}
+
 @media (min-width: 69rem) {
   .products-info-positioning {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    grid-template-areas: "photo photo"
+                         "description calender";
+  }
+
+  .products-img {
+    grid-area: photo;
+  }
+
+  .space-description-list {
+    grid-area: description;
+    margin-top: 2rem;
   }
 
   .calender {
     margin-left: 2rem;
-    grid-row-start: 2;
-    grid-column-start: 2;
+    grid-area: calender;
     float: right;
   }
 
   .checkout-button {
-    grid-column-start: 2;
-    grid-row-start: 2;
+    grid-area: calender;
     font-size: 1.5rem;
     text-align: center;
   }
@@ -236,7 +249,7 @@ li {
   background-color: #ddd;
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(7, 1fr);
   padding: 1rem;
 }
 
@@ -249,8 +262,8 @@ li {
   max-width: 35rem;
   background: #eee;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   padding: 1rem;
 }
 
@@ -317,8 +330,8 @@ li {
 
 /*SCREEN POSITIONING FOR DIFFERENT SCREENS*/
 @media (max-width: 38rem) {
-  .element-for-centering, .main-element, .element, .element-heading, h2, h3, h4{
+  .main-element, .element, .element-heading, h2, h3, h4{
     margin-left: 0;
-    padding-left: 0.4rem;
+    padding-left: 1rem;
   }
 }
