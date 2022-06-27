@@ -125,6 +125,7 @@ font-size:1.75rem;
   color: white;
 }
 
+
 @media (max-width: 69rem) {
   .main-navigation {
     padding-top: 5rem;
@@ -159,7 +160,17 @@ font-size:1.75rem;
 .main-citations img {
   display: block;
 }
+.icons-citations {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.icons-citations li {
+  margin: 2rem;
+}
+.icons-citations img {
+  width: 10rem;
+}
 
 
 /*PROUCTS PAGE */
@@ -176,6 +187,12 @@ li {
 
 .products-img img {
   width: 100%;
+}
+
+.description-icons img {
+  max-width: 4rem;
+  max-height: 4rem;
+  margin: 1rem;
 }
 
 @media (min-width: 69rem) {
@@ -324,9 +341,6 @@ li {
 .endText {
   text-align: center;
 }
-
-
-
 
 /*SCREEN POSITIONING FOR DIFFERENT SCREENS*/
 @media (max-width: 38rem) {
