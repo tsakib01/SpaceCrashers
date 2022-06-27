@@ -190,9 +190,16 @@ li {
 }
 
 .description-icons img {
-  max-width: 4rem;
-  max-height: 4rem;
+  max-width: 3rem;
+  max-height: 3rem;
   margin: 1rem;
+}
+
+@media (min-width: 33.5rem) {
+  .description-icons img {
+    max-width: 4rem;
+    max-height: 4rem;
+  }  
 }
 
 @media (min-width: 69rem) {
