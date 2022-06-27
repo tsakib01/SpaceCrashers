@@ -356,8 +356,15 @@ li {
 
 /*SCREEN POSITIONING FOR DIFFERENT SCREENS*/
 @media (max-width: 38rem) {
-  .main-element, .element, .element-heading, h2, h3, h4{
+  .main-element, .element, .element-heading{
     margin-left: 0;
     padding-left: 1rem;
   }
+
+  h2, h3, h4 {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  
 }
