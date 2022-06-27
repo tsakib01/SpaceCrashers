@@ -296,6 +296,11 @@ li {
   color: white;
 }
 
+.days div:nth-child(-n+7):hover {
+  background-color: #332E3C;
+  color: white;
+}
+
 .days div:hover {
   background: #E87461;
   color: white;
