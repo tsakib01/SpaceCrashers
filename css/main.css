@@ -2,7 +2,7 @@ main {
   min-height: 73.5vh;
 }
 
-a img:hover, a img:focus {
+a img:hover, a img:focus, a img:active {
   opacity: 50%;
 }
 
@@ -76,7 +76,7 @@ font-size:1.75rem;
 
 .browse {
   float: right;
-  margin-top: -4rem;
+  margin-top: -3rem;
 }
 
 .element-position {
