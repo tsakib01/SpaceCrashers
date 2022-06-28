@@ -86,12 +86,18 @@ font-size:1.75rem;
 }
 
 @media (max-width: 37.5rem){
+
+  .main-navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   .main-navigation a{
     margin: 0;
-    padding: 0;
+    padding: 0rem;
     margin-bottom: -0.5rem;
   }
-  .main-navigation a:first-child{
+  .main-navigation a:first-child, .main-navigation a:nth-child(2) {
     margin-top: 1rem;
   }
 
@@ -101,7 +107,7 @@ font-size:1.75rem;
 
   .intro-header {
     padding: 1rem;
-    width: 20rem;
+    width: 15rem;
   }
 }
 
