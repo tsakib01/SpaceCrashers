@@ -6,26 +6,90 @@ a img:hover, a img:focus, a img:active {
   opacity: 50%;
 }
 
-header {
+h3 {
+  margin-left: 1rem;
+}
+
+
+/* header {
   position: sticky;
   top:0;
   left: 0;
   z-index: 2;
-}
+} */
 
-/* INDEX PAGE */
+/*------------------------------------ INDEX PAGE-------------------------------------*/
+
 /* Hero Image Styling */
 /* .img-container{
   position:relative;
 } */
 
-.intro {
-  position: inherit;
+header {
+  position: sticky;
+  top:0;
+  left: 0;
+  z-index: 2;
+  background-color: #332E3C;
+  margin-top: 0;
+
+}
+
+.main-heading {
+  padding: 1rem;
+  margin: 0rem auto;
+  background-color: #332E3C;
+  font-size: 2rem;
+}
+
+.main-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.main-navigation a{
+  margin: 0;
+  padding: 1rem;
+}
+
+@media (min-width: 37.5rem) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+  } 
+
+  .main-heading {
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: #332E3C;
+    font-size: 2rem;
+    position: relative;
+    left: 0;
+    top: 0;
+    float: left;
+  }
+
+  .main-navigation {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media (min-width: 69rem) {
+  .main-navigation {
+    margin-top: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
 }
 
 
 .intro-slideshow img{
-  position:absolute;
+  position: absolute;
   left:0;
   width:100%;
   height:100%;
@@ -64,15 +128,6 @@ font-size:1.75rem;
   margin-bottom: 2rem;
 }
 
-.main-heading {
-  padding: 1rem;
-  margin-top: 1rem;
-  background-color: #332E3C;
-  font-size: 2rem;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
 
 .browse {
   float: right;
@@ -81,24 +136,34 @@ font-size:1.75rem;
 
 .element-position {
   position: relative;
-  margin-top: 55rem;
-
+  margin-top: 45rem;
 }
 
-@media (max-width: 37.5rem){
 
-  .main-navigation {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+@media (min-width: 37.5rem) {
+  .element-position {
+    margin-top: 46rem;
   }
+}
 
-  .main-navigation a{
-    margin: 0;
-    padding: 0rem;
-    margin-bottom: -0.5rem;
+
+@media (min-width: 69rem) {
+  .element-position {
+    margin-top: 47rem;
   }
+}
+
+
+/* @media (min-width: 90rem) {
+  .element-position {
+    margin-top: 55rem;
+  }  
+} */
+
+@media (max-width: 37.5rem) {
+
   .main-navigation a:first-child, .main-navigation a:nth-child(2) {
-    margin-top: 1rem;
+    margin-top: 0rem;
   }
 
   .intro-header h2 {
@@ -111,10 +176,15 @@ font-size:1.75rem;
   }
 }
 
-@media (min-width: 51rem) {
+.flex-item img {
+  width: 60rem;
+  height: auto;
+}
+
+@media (min-width: 86rem) {
   .flex-item img{
     width: 35rem;
-    height: 25rem;
+    height: auto;
   }
 
   .flex-item {
@@ -134,7 +204,7 @@ font-size:1.75rem;
 
 @media (max-width: 69rem) {
   .main-navigation {
-    padding-top: 5rem;
+    padding-top: 0rem;
   }
 
   .main-navigation a{
@@ -361,16 +431,71 @@ li {
 }
 
 /*SCREEN POSITIONING FOR DIFFERENT SCREENS*/
-@media (max-width: 38rem) {
-  .main-element, .element, .element-heading{
-    margin-left: 0;
-    padding-left: 1rem;
+
+/* .main-element {
+  margin-left: 2rem;
+  margin-right: 2rem;
+} */
+
+@media (max-width: 90rem) {
+
+  .element {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
   }
+
+  .element-for-centering {
+    margin-bottom: 3rem;
+  }
+
+  .main-element {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .main-element-item1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 38rem) {
 
   h2, h3, h4 {
     margin-left: 0;
     padding-left: 0;
+    padding-top: 1rem;
   }
 
-  
+  img {
+    padding: 0;
+  }
+
+  .element {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .main-element {
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .element-for-centering {
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .flex-item-popular{
+    margin-bottom: 1rem;
+  }
+
 }
