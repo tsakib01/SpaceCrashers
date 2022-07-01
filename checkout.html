@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style-guide.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Cart</title>
+    <title>Bookings</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,47 +18,64 @@
       <div class="site-logo">
         <a href="index.html"><h1 class="main-heading">SpaceCrashers</h1></a>
       </div>
-      <nav class="main-navigation">
-        <a href="index.html">Home</a>
-        <a href="products-catalogue.html">Listings</a>
-        <a href="about.html">About us</a>
-        <a href="checkout.html">Cart</a>
-        <a href="login.html">Log In</a>
+      <nav>
+        <ul class="main-navigation">
+          <li><a id="home" href="index.html">Home</a></li>
+          <li><a id="listings" href="products-catalogue.html">Listings</a></li>
+          <li><a id="about" href="about.html">About us</a></li>
+          <li><a id="cart" href="checkout.html">Bookings</a></li>
+          <li><a id="login" href="login.html">Log In</a></li>
+        </ul>
       </nav>
     </header>
 
     <main class="element-for-centering">
       <section class="main-element">
         <h2>Checkout</h2>
-        <form>
-          <div class="form-element">
-            <label for="checkout-name">First Name</label>
-            <input
-              id="checkout-name"
-              type="text"
-              placeholder="Name as it appears on Card"
+        <div class="checkout-grid">
+          <section>
+            <h4>Garden Theatre</h4>
+            <img
+              src="img/garden_theatre_400.png"
+              alt="Garden theatre available for rent"
+              srcset="
+                img/garden_theatre_400.png   400w,
+                img/garden_theatre_800.png   800w,
+                img/garden_theatre_1200.png 1200w,
+                img/garden_theatre_2000.png 2000w
+              "
             />
-          </div>
+            <p><strong>Booked Days: 8th June, 2022 to 22nd June, 2022</strong></p>
+          </section>
+          <form>
+            <div class="form-element">
+              <label for="checkout-name">First Name</label>
+              <input
+                id="checkout-name"
+                type="text"
+                placeholder="Name as it appears on Card"
+              />
+            </div>
 
-          <div class="form-element">
-            <label for="checkout-cardNumber">Credit Card Number</label>
-            <input
-              id="checkout-cardNumber"
-              type="text"
-              placeholder="0000 0000 0000 0000"
-            />
-          </div>
+            <div class="form-element">
+              <label for="checkout-cardNumber">Credit Card Number</label>
+              <input
+                id="checkout-cardNumber"
+                type="text"
+                placeholder="0000 0000 0000 0000"
+              />
+            </div>
 
-          <div class="form-element">
-            <label for="checkout-cvc">CVC</label>
-            <input id="checkout-cvc" type="text" placeholder="000" />
-          </div>
+            <div class="form-element">
+              <label for="checkout-cvc">CVC</label>
+              <input id="checkout-cvc" type="text" placeholder="000" />
+            </div>
 
-          <!-- <div><img src="#" alt="A venue being booked" /></div> -->
-          <a class="button-nav checkout-confirm" href="thanks.html"
-            >Confirm Booking</a
-          >
-        </form>
+            <a class="button-nav checkout-confirm" href="thanks.html"
+              >Confirm Booking</a
+            >
+          </form>
+      </div>
       </section>
     </main>
 

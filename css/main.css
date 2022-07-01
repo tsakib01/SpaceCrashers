@@ -6,10 +6,6 @@ a img:hover, a img:focus, a img:active {
   opacity: 50%;
 }
 
-h3 {
-  margin-left: 1rem;
-}
-
 
 /* header {
   position: sticky;
@@ -35,6 +31,7 @@ header {
 
 }
 
+
 .main-heading {
   padding: 1rem;
   margin: 0rem auto;
@@ -46,6 +43,8 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .main-navigation a{
@@ -142,6 +141,7 @@ font-size:1.75rem;
 
 @media (min-width: 37.5rem) {
   .element-position {
+    position: relative;
     margin-top: 46rem;
   }
 }
@@ -149,6 +149,7 @@ font-size:1.75rem;
 
 @media (min-width: 69rem) {
   .element-position {
+    position: relative;
     margin-top: 47rem;
   }
 }
@@ -156,6 +157,7 @@ font-size:1.75rem;
 
 /* @media (min-width: 90rem) {
   .element-position {
+    position: relative;
     margin-top: 55rem;
   }  
 } */
@@ -428,6 +430,33 @@ li {
 
 .endText {
   text-align: center;
+}
+
+/* CHECKOUT PAGE */
+
+.checkout-grid section {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 69rem){
+  .checkout-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .checkout-grid section {
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+  .checkout-grid section h4 {
+    margin-top: 0;
+  }
+
+  .checkout-grid form {
+    margin-left: 3rem;
+    margin-top: 2rem;
+  }
+
 }
 
 /*SCREEN POSITIONING FOR DIFFERENT SCREENS*/
