@@ -24,6 +24,11 @@ header {
 
 }
 
+.site-logo {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
 
 .main-heading {
   padding: 1rem;
@@ -36,7 +41,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  margin-top: 0;
+  margin-top: 1rem;
   margin-bottom: 0;
 }
 
@@ -56,6 +61,7 @@ header {
   .main-heading {
     padding: 1rem;
     margin-top: 1rem;
+    margin-bottom: 0;
     background-color: #332E3C;
     font-size: 2rem;
     position: relative;
@@ -65,7 +71,8 @@ header {
   }
 
   .main-navigation {
-    margin-top: 2rem;
+    margin-top: 1rem;
+    padding-bottom: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -78,7 +85,6 @@ header {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
-
 
 .intro-slideshow .hero-image img {
   position: absolute;
@@ -99,6 +105,14 @@ header {
   margin: 0rem auto;
   top: 5rem;
   text-align: center;
+}
+
+.hero-image {
+  display: none;
+}
+
+.intro-slideshow .hero-image:first-child {
+  display: block;
 }
 
 h2 {
@@ -148,7 +162,7 @@ h2 {
   /* margin: 1rem; */
   /* white-space: nowrap; */
   animation: 
-  typing 5s steps(20, end) forwards;
+  typing 1s steps(20, end) forwards;
   font-size: 1.2rem;
   /* width: 40rem; */
   font-weight: 900;
