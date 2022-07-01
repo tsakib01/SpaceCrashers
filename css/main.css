@@ -378,16 +378,19 @@ li {
 
 .days div:nth-child(-n+7) {
   background-color: #332E3C;
+  cursor: default;
   color: white;
 }
 
 .days div:nth-child(-n+7):hover {
   background-color: #332E3C;
+  cursor: default;
   color: white;
 }
 
 .days div:hover {
   background: #E87461;
+  cursor: pointer;
   color: white;
 }
 
