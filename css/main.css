@@ -161,18 +161,18 @@ h2 {
   border-radius: 0.5rem;
   /* margin: 1rem; */
   /* white-space: nowrap; */
-  animation: 
-  typing 1s steps(20, end) forwards;
+  /* animation: 
+  typing 2s steps(20, end) forwards; */
   font-size: 1.2rem;
-  /* width: 40rem; */
+  max-width: 45rem;
   font-weight: 900;
   /* max-width: 50rem;
   height: 2rem; */
 }
 
 @keyframes typing {
-  from { min-width: 0 }
-  to { max-width: 100% }
+  from { width: 0 }
+  to { width: 100% }
 }
 
 @media (min-width: 37.5rem) {
@@ -183,13 +183,22 @@ h2 {
 
 }
 
+@media (min-width: 46rem) {
+  .type-effect1, .type-effect2, .type-effect3, .type-effect4, .type-effect5 {
+    width:0;
+    animation: 
+    typing 1s steps(20, end) forwards;
+    white-space: nowrap;
+  }
+
+}
+
 
 @media (min-width: 69rem) {
   .element-position {
     position: relative;
     margin-top: 47rem;
   }
-
   .type-effect1, .type-effect2, .type-effect3, .type-effect4, .type-effect5 {
     left: 5rem;
   }
