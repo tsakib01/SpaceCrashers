@@ -14,6 +14,10 @@ a img:hover, a img:focus, a img:active {
   z-index: 2;
 } */
 
+p {
+  line-height: 1.5rem;
+}
+
 /*------------------------------------ INDEX PAGE-------------------------------------*/
 
 /* Hero Image Styling */
