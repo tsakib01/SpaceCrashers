@@ -157,7 +157,7 @@ h2 {
   z-index: 1;
   max-width: 35rem;
   margin: 0rem auto;
-  bottom: 8rem;
+  bottom: 5rem;
   text-align: center;
   overflow: hidden;
   border-radius: 0.5rem;
@@ -171,11 +171,11 @@ h2 {
   to { width: 100% }
 }
 
-/* @media (min-width: 24rem) {
+@media (min-width: 24rem) {
   .type-effect1, .type-effect2, .type-effect3, .type-effect4, .type-effect5 {
     bottom: 10rem;
   }
-} */
+}
 
 @media (min-width: 37.5rem) {
   .element-position {
